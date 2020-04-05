@@ -1,8 +1,51 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightskyblue;
 }
 
 a {
   color: #00B7FF;
+}
+.center-content{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#title{
+  font-size: x-large;
+}
+#winner{
+  font-size: x-large;
+}
+#tennis-match{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+#score-box {
+  border-collapse: collapse;
+}
+
+tr, td {
+  border: 1px solid black;
+}
+#score-box *{
+  padding: 20px;
+}
+.player-info{
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: column;
+}
+.user-buttons{
+  margin-top: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.user-buttons *{
+  padding: 20px;
+  font-size: medium;
+  background-color: coral;
 }

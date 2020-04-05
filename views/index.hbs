@@ -1,2 +1,36 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div id="title" class="center-content">
+<h1>Tennis Match</h1>
+</div>
+<div id="winner" class="center-content"></div>
+<div id="tennis-match">
+    <div class="player-info">
+        <h2>Player 1</h2>
+        <div id="player1GameScore">{{this.player1GameScore}}</div>
+    </div>
+    <img src="https://t4.ftcdn.net/jpg/02/47/68/87/240_F_247688778_20RFhJB5HZzcxA5Eyc6XQesMUe0fjZac.jpg"/>
+    <div class="player-info">
+        <h2>Player 2</h2>
+        <div id="player2GameScore">{{this.player2GameScore}}</div>
+    </div>
+</div>
+<div>
+    <table id="score-box" class="center-content">
+        <tr>
+            <td>Player 1: </td>
+            <td id="player1Set1">{{this.player1Set1Score}}</td>
+            <td id="player1Set2">{{this.player1Set2Score}}</td>
+            <td id="player1Set3">{{this.player1Set3Score}}</td>
+        </tr>
+        <tr>
+            <td>Player 2: </td>
+            <td id="player2Set1">{{this.player2Set1Score}}</td>
+            <td id="player2Set2">{{this.player2Set2Score}}</td>
+            <td id="player2Set3">{{this.player2Set3Score}}</td>
+        </tr>
+    </table>
+</div>
+<div class = "user-buttons">
+<button onclick="playerScore(1)">Player 1 scored</button>
+<button onclick="resetGame()">Reset Game</button>
+<button onclick="playerScore(2)">Player 2 scored</button>
+</div>
